@@ -24,7 +24,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-wait": "0.0.2"
+    "gulp-wait": "0.0.2",
+    "sass": "^1.58.3"
   },
   "dependencies": {
     "ansi-colors": "^1.1.0",
