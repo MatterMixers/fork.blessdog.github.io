@@ -25,6 +25,18 @@
         11. Optional Section Styles
         12. Media Queries
 */
+/*
+    Colors: (light to dark)
+    ffa69e pink
+    efebce
+    b8f2e6
+    aed9e0
+    d6ce93
+    a3a380
+    5e6472
+
+    
+*/
 
 /*
     ------------------------
@@ -33,19 +45,22 @@
 */
 
 // Define base and accent colors
-$base-color: #168aad;
-$base-color-hover: darken($base-color, 10%);
+$base-color: #595959;
+$base-color-hover: darken($base-color, 02%);
 
 // Define background colors
-$background: #34a0a4;
-$background-alt: #52b69a;
+$background: #ced4da;
+$background-alt: #6c757d;
+$background2: #343a40;
 
 // Define border colors
-$border: #76c893;
+$border: #dee2ff;
+$lightBright: #ffbf81;
 
 // Define text colors
-$heading: #99d98c;
-$text: #33415c;
+$heading: #e5fcf5;
+$text: #f8f9fa;
+$darkText: #210124;
 
 /*
     ---------------------
@@ -53,7 +68,7 @@ $text: #33415c;
     ---------------------
 */
 
-@mixin transition($duration: 0.1s, $func: ease, $property: all) {
+@mixin transition($duration: 0.05s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
 }
 
@@ -113,7 +128,7 @@ body {
             h4 {
                 font-size: 1.2em;
                 font-weight: 300;
-                color: #7e8890;
+                color: #feeffc;
                 margin: 0 0 15px 0;
             }
 
@@ -149,7 +164,7 @@ header {
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-    animation-duration: 0.75s;
+    animation-duration: 0.05s;
 
     ul {
         display: inline-block;
@@ -173,7 +188,7 @@ header {
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
-            background: #eee;
+            background: rgb(218, 213, 218);
             border-radius: 4px;
         }
 
@@ -349,7 +364,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/dish.jpg);
+    background: url(../images/largeArray.png);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -418,7 +433,7 @@ footer {
     }
 
     i {
-        animation: pulsate 1.5s ease;
+        animation: pulsate 0.05s ease;
         animation-iteration-count: infinite;
         padding-top: 5px;;
     }
@@ -447,6 +462,7 @@ footer {
 #about {
     padding: 75px 15px;
     border-bottom: 1px solid $border;
+    background-color: $background2;
 
     h2 {
         color: $heading;
@@ -506,8 +522,8 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: #fff;
-    border: 1px solid #e6e6e6;
+    background: rgb(223, 236, 240);
+    border: 1px solid $heading;
     padding: 15px;
     border-radius: 3px;
     text-align: left;
@@ -515,7 +531,7 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $darkText;
         display: inline-block;
         margin: 0;
     }
@@ -523,12 +539,12 @@ footer {
     h4 {
         font-size: 1.2em;
         font-weight: 300;
-        color: #7e8890;
+        color: $darkText;
         margin: 0 0 15px 0;
     }
 
     p {
-        color: $text;
+        color: #303637 text;
         font-size: 0.9em;
         margin: 0;
     }
@@ -543,7 +559,7 @@ footer {
 
 .vtimeline-icon {
     position: relative;
-    color: #fff;
+    color: #ffffff;
     width: 50px;
     height: 50px;
     background: $base-color;
@@ -566,7 +582,7 @@ footer {
     left: 0;
     top: 10px;
     font-weight: 300;
-    color: #374054;
+    color: $heading;
 }
 
 /*
@@ -579,6 +595,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background-color: $background2;
 
     h2 {
         color: $heading;
@@ -663,12 +680,12 @@ footer {
     h3 {
         font-size: 1.5em;
         font-weight: 300;
-        color: $heading;
+        color: $darkText;
         margin: 0 0 15px 0;
     }
 
     p {
-        color: $text;
+        color: $darkText;
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
@@ -696,6 +713,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background-color: $background2;
 
     h2 {
         color: $heading;
