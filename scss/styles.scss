@@ -66,10 +66,9 @@ $darkText: #210124;
     ---------------------
     ----- 2. Mixins -----
     ---------------------
-    
-NO MORE SMOOTH SCROLLING!@!!!
-@mixin transition($duration: 0.05s, $func: ease, $property: all) {
-    transition: #{$duration} #{$func} #{$property};
+
+@mixin transition() {
+    transition: none 
 }
 */
 
@@ -145,7 +144,7 @@ body {
         }
     }
 }
-
+/*
 @keyframes dropHeader {
   0% {
     transform: translateY(-100%);
@@ -154,7 +153,17 @@ body {
     transform: translateY(0);
   }
 }
-
+*/
+html {
+    scroll-behavior: auto; /* disable smooth scrolling */
+  }
+  
+  /* make all transitions instant */
+  * {
+    transition-duration: 0s;
+   
+  }
+  
 header {
     position: absolute;
     top: 0;
@@ -162,10 +171,8 @@ header {
     right: 0;
     text-align: center;
     z-index: 10;
-    animation-name: dropHeader;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 0.05s;
+    scroll-behavior: auto;
+    transition-duration: 0s;
 
     ul {
         display: inline-block;
@@ -313,7 +320,7 @@ footer {
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
-    @include transition();
+    @include transition(none);
 
     &:hover {
         color: $base-color;
@@ -439,7 +446,7 @@ footer {
         padding-top: 5px;;
     }
 }
-
+/*
 @keyframes pulsate {
     0% {
         transform: scale(1, 1);
@@ -453,6 +460,7 @@ footer {
         transform: scale(1, 1);
     }
 }
+/*
 
 /*
     ---------------------------
@@ -771,7 +779,7 @@ footer {
         margin-bottom: 10px;
         background: darken($base-color, 15%);
         color: #fff;
-        @include transition();
+        @include transition(none);
         @include placeholder {
             color: #fff;
         }
@@ -797,7 +805,7 @@ footer {
         color: $base-color;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        @include transition();
+        scroll-behavior: auto;
 
         &:hover {
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
