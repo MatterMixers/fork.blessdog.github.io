@@ -66,11 +66,12 @@ $darkText: #210124;
     ---------------------
     ----- 2. Mixins -----
     ---------------------
-*/
-
+    
+NO MORE SMOOTH SCROLLING!@!!!
 @mixin transition($duration: 0.05s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
 }
+*/
 
 @mixin placeholder {
     &::-webkit-input-placeholder {
