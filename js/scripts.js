@@ -2,9 +2,8 @@
     Title: Dev Portfolio Template
     Version: 1.2.2
     Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
+    Author: Ryan Anselman
+    Repo: https://github.com/blessdog/blessdog/github.io
 
     Description: This file contains all the scripts associated with the single-page
     portfolio website.
@@ -18,7 +17,7 @@
     // Remove no-js class
     $('html').removeClass('no-js');
 
-    // Animate to section when nav is clicked
+    /* Animate to section when nav is clicked
     $('header a').click(function(e) {
 
         // Treat as normal link if no-scroll class
@@ -37,6 +36,7 @@
             $('header, body').removeClass('active');
         }
     });
+    */
 
     // Scroll to top
     $('#to-top').click(function() {
