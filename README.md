@@ -7,8 +7,6 @@ This repo contains an easy-to-customize personal dev portfolio template that was
 To view a live demo, [click here](https://anselman.com).
 =======
 
-Looking for a blog template? Checkout [DevBlog](https://github.com/blessdog/blessdog.github.io).
-
 ## Features
 
 * Gulp ready (compiles Sass and minifies JS)
