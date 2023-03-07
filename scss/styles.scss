@@ -58,7 +58,7 @@ $border: #dee2ff;
 $lightBright: #ffbf81;
 
 // Define text colors
-$heading: #c9efa3;
+$heading: #b7ea84;
 $text: #f8f9fa;
 $darkText: #210124;
 
@@ -67,10 +67,11 @@ $darkText: #210124;
     ----- 2. Mixins -----
     ---------------------
 
+*/
 @mixin transition() {
     transition: none 
 }
-*/
+
 
 @mixin placeholder {
     &::-webkit-input-placeholder {
@@ -154,15 +155,7 @@ body {
   }
 }
 */
-html {
-    scroll-behavior: auto; /* disable smooth scrolling */
-  }
-  
-  /* make all transitions instant */
-  * {
-    transition-duration: 0s;
-   
-  }
+
   
 header {
     position: absolute;
@@ -176,9 +169,9 @@ header {
 
     ul {
         display: inline-block;
-        background: $background;
+        background: red;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
         margin: 0;
         border-bottom-right-radius: 4px;
         border-bottom-left-radius: 4px;
@@ -530,7 +523,7 @@ footer {
 
 .vtimeline-content {
     margin-left: 350px;
-    background: rgb(223, 236, 240);
+    background: rgb(224, 238, 242);
     border: 1px solid $heading;
     padding: 15px;
     border-radius: 3px;
