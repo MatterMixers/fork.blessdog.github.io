@@ -17,7 +17,7 @@
     // Remove no-js class
     $('html').removeClass('no-js');
 
-    /* Animate to section when nav is clicked
+    //Animate to section when nav is clicked
     $('header a').click(function(e) {
 
         // Treat as normal link if no-scroll class
@@ -27,16 +27,16 @@
         var heading = $(this).attr('href');
         var scrollDistance = $(heading).offset().top;
 
-        $('html, body').animate({
+        // Enable smooth-scrolling
+        //---> Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+       $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
-
+        }, 400)
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
             $('header, body').removeClass('active');
         }
     });
-    */
 
     // Scroll to top
     $('#to-top').click(function() {

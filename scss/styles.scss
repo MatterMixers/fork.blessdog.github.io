@@ -46,7 +46,7 @@
 
 // Define base and accent colors
 $base-color: #595959;
-$base-color-hover: darken($base-color, 02%);
+$base-color-hover: darken($base-color, 0.5%);
 
 // Define background colors
 $background: #ced4da;
@@ -58,7 +58,7 @@ $border: #dee2ff;
 $lightBright: #ffbf81;
 
 // Define text colors
-$heading: #e5fcf5;
+$heading: #c9efa3;
 $text: #f8f9fa;
 $darkText: #210124;
 
@@ -196,8 +196,8 @@ header {
         &:hover {
             color: $base-color-hover;
             text-decoration: none;
-            background: rgb(218, 213, 218);
-            border-radius: 4px;
+            background: rgb(255, 250, 255);
+            border-radius: 2px;
         }
 
         &:focus {
@@ -320,7 +320,6 @@ footer {
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
-    @include transition(none);
 
     &:hover {
         color: $base-color;
@@ -779,7 +778,6 @@ footer {
         margin-bottom: 10px;
         background: darken($base-color, 15%);
         color: #fff;
-        @include transition(none);
         @include placeholder {
             color: #fff;
         }
